@@ -1,0 +1,63 @@
+onchain_id,snapshot_id,title,status,snapshot_url,discourse_url,onchain_in_db,snapshot_in_db
+90476529665364161211265365238121921179703522228680648046371476645353679539653,,[EP2] Retrospective Airdrop ,executed,,,True,False
+65967822514040846992464797266243157509206510058326665394616765053720727454968,,# Execute EP5,executed,,,True,False
+115615865324623814833258987703837575663427750121726187103053182962864855260310,,# Execute EP7,executed,,,True,False
+27850654116740852236526757351596115114486670304472932313768517382407193376455,,"# Execute EP8, EP9 and EP10",defeated,,,True,False
+82659277767818009782194204088226418907972756681918239480374274857360772298879,,# Execute EP8 and EP10,executed,,,True,False
+107166664722174233740232174220463354481004128961821575530758100250899337476509,,# Execute EP9,executed,,,True,False
+99882233577221676057992280816078245519848378270443751235073826886360950537295,,# Execute EP11,executed,,,True,False
+8759198094868535520038506706231539487662297008587733129541987545743856603253,,"# [EP13] [Executable] Fund the Protocol Guild pilot with 200,000 $ENS",executed,,,True,False
+112764562576314516994943312429834673309292069549953740415731020720942627228986,,# [EP14][Executable] Funding True Names Ltd,executed,,,True,False
+43203199770691383238593940280239053946984014979449022275641313046078578194694,,# Dissolve the community WG multisig per EP15,executed,,,True,False
+21861129347596183989807248258922558214743224135371288783165185538477576992486,,Execute EP16,executed,,,True,False
+45461903078948131870051132081249892009497709518413744958551889217805827301425,,[EP3.3] [Executable] Sell ETH to USDC,executed,,,True,False
+105292919185331921858643224173178583901390266903267892669205105842869373522526,,[EP3.2] [Executable] Q1/Q2 2023 Working Group Funding,executed,,,True,False
+90786656233306599444783442367171420493182391933134906270328139870999449830964,,[EP3.4] Fund the Endowment (first tranche),executed,,,True,False
+42973781582803845389836855775840822719678533376883030929209752909248937768242,,[EP3.5] [Executable] Activate new .eth Controller and Reverse Registrar,executed,,,True,False
+55447465396737793905646186593156244424717001140618132725073945884287085787959,,[EP4.1] [Executable] Approve further actions and strategies for the Endowment,executed,,,True,False
+10686228418271748393758532071249002330319730525037728746406757788787068261444,,[EP4.2][Executable] Fund the Endowment (second tranche),executed,,,True,False
+87741894125754523615596264728611635516467361279764827076788536604061840625452,,[EP4.3] [Executable] Refund Invalid .eth Names,executed,,,True,False
+97815480450036429026998617227498389389237567897899533433380564585906006968770,,# [EP 4.6] [Executable] October 2023 Working Group Funding,executed,,,True,False
+15706104363492914432572227540113855373051896881975394006732444538096386655538,,# [EP 4.5] [Executable] Endowment permissions to karpatkey - Update #3,executed,,,True,False
+4208408830555077285685632645423534041634535116286721240943655761928631543220,,# [EP5.1] [Executable] Upgrade DNSSEC support,executed,,,True,False
+63865530602418424570813160277709124551851041237648860550576561576702951975816,,# [EP5.2] [Executable] Commence Streams for Service Providers ,executed,,,True,False
+45720656345448826187222659689199787286494046921153399380076959662321080408931,,# [EP 5.6] [Executable] Enable Self-Funding for the Endowment,executed,,,True,False
+48839151689001950442481252711111182244814765601408465024742109276815020082612,,[EP 5.5] Funding Request: ENS Public Goods Working Group Term 5 (Q1/Q2),executed,,,True,False
+76312276134880424811339391717815330375652916610982980144903695563372140531115,,# [EP5.11] [Executable] Proposal: Fund the Meta-Governance Working Group (Term 5),executed,,,True,False
+107992041043258996427224563090014372885335179099580585497266204203463156791290,,[EP 5.12] Roles Modifier V2 Migration & Updates to Endowment Permissions,executed,,,True,False
+42329103797433777309488042029679811802172320979541414683300183273376839219133,0xf3a4673fe04a3ecfed4a2f066f6ced1539a5466d61630428333360b843653c54,[EP5.13][Executable] Security Council,executed,https://snapshot.org/#/ens.eth/proposal/0xf3a4673fe04a3ecfed4a2f066f6ced1539a5466d61630428333360b843653c54,https://discuss.ens.domains/t/temp-check-enable-cancel-role-on-the-dao/19090/19,True,True
+62537345451524095629071359388092434511638926463658570104856324869910407296726,,[EP 5.14] [Executable] Endowment permissions to karpatkey - Update #4 ,executed,,https://discuss.ens.domains/t/ep-5-x-executable-endowment-permissions-to-karpatkey-update-4/19503,True,False
+33657496545373741813637578444724485346468737982573562831880427564621945332995,,# [EP 5.16] [Executable] Reimbursement of ENS Labs’ legal fees in eth.link litigation,executed,,,True,False
+33504840096777976512510989921427323867039135570342563123194157971712476988820,,# [5.22] [EXECUTABLE PROPOSAL] ENSv2 Development Funding ,executed,,,True,False
+6949396467348678571876890705367894936837088742488849089767544172635343148173,,"# [EP 5.24] [Executable] Term 5 Q4, Collective Working Group Funding Proposal",defeated,,,True,False
+46071186312489687574960948336391811341595411932836110873328798657006776570015,0x5067725bef9cde0de0024adedb653a7a1752aefa726adf628b77048d85821a6d,[EP 5.23] [Executable] blockful's governance security bounty,executed,https://snapshot.org/#/ens.eth/proposal/0x5067725bef9cde0de0024adedb653a7a1752aefa726adf628b77048d85821a6d,https://discuss.ens.domains/t/temp-check-governance-security-compensating-blockful-for-preventing-a-potential-attack-on-the-ens-dao/19710,True,True
+14573906698181916980991958251655570598275649222336388998984945658874299918898,,# [EP 5.25] [Executable] Collective Working Group Funding Request (Oct 2024) - Resubmission,executed,,,True,False
+50152158826647742094695349340830523178083147237337111134725087674188893435887,,# [EP 5.26] [Executable] Implementation of [EP 5.19]’s ENS Governance Distribution Pilot Program,executed,,,True,False
+40272043175867710511047990376059633000673751036364092383567949469124429500507,,[EP 5.27][Executable] Revoke the DAO's ability to upgrade the name wrapper,executed,,https://discuss.ens.domains/t/temp-check-executable-revoke-the-daos-ability-to-upgrade-the-name-wrapper/19920,True,False
+15212507956777005315602309329914215169878587763966450377165643673108805753590,,# [EP 5.28] [Executable] Reimbursement of eth.limo’s ongoing legal fees,executed,,,True,False
+13214174724111749338017943143826453367599509196993220699255450633508989705578,,# [EP 5.29] Funding request for Unruggable to build and operate a network of gateways supporting the rollout of ENSIP-19: EVM-chain Reverse Resolution ,defeated,,,True,False
+33808096277765934415068056906696425640427679116963285327644834080891069190379,,"# [EP6.1] [Executable] Convert 6,000 ETH to USDC for DAO Operating Expenses",executed,,,True,False
+31309365093913580207991288430108338667724061355449265288906484597789511363394,,# [EP6.2] Endowment expansion (3rd tranche),executed,,,True,False
+51329136884099251878034959419745117799040381230875971532699817044496491926852,,[6.7] [Executable] Transfer .ceo TLD to the DNSSEC registrar,executed,,https://discuss.ens.domains/t/temp-check-executable-transfer-ceo-tld-to-the-dnssec-registrar/20594,True,False
+7404040509873168432228479064563591804702835162347907107082011204120525681390,,[EP 6.8] [Executable] Endowment permissions to karpatkey - Update #5,executed,,,True,False
+83558494563463316177076768398348085020294312678713085260352382286714788322618,,[EP6.7] [Executable] Revoke root controller role from legacy ENS multisig,executed,,https://discuss.ens.domains/t/ep-6-8-executable-revoke-root-controller-role-from-legacy-ens-multisig/20644,True,False
+75480516867756766284972947192514005324792532674550120092693062891336419998702,,[EP6.12] [Executable] Set resolver for .ceo TLD,executed,,https://discuss.ens.domains/t/executable-set-resolver-for-ceo-tld/20820/1,True,False
+18742211083269328003498907723174230327570776601682376043962489402709315500668,,[EP 6.11] [Executable] Collective Working Group Funding Request (April 2025),executed,,https://discuss.ens.domains/t/ep-6-11-executable-collective-working-group-funding-request-april-2025/20788/1,True,False
+6325634497264265012626716784077918930541180346289202027480596910133312093648,,[EP 6.13] [Executable] - Service Provider Program Season 2 Implementation,defeated,,,True,False
+20404686300257550242704646761273386459664655640264490428281621095220078268383,,[EP 6.13] [Corrected] [Executable] - SPP Season 2 Implementation,executed,,https://discuss.ens.domains/t/ep-6-13-executable-service-provider-program-season-2-implementation/20971,True,False
+43003012871521685709452092060115706577030630127946926655190871046443785691900,,[Executable] Enable L2 Reverse Registrars and new .eth registrar controller,defeated,,https://discuss.ens.domains/t/executable-enable-l2-reverse-registrars-and-new-eth-registrar-controller/20969,True,False
+42524979896803285837776370636134389407867034021879791462477783237030656381157,,[Executable] Enable L2 Reverse Registrars and new .eth registrar controller,executed,,,True,False
+51903780073989583830128732176342966426696684927524697157008519276797273489808,,[Executable] Transfer .locker TLD to Orange Domains LLC,executed,,https://discuss.ens.domains/t/executable-transfer-locker-tld-to-orange-domains-llc/21077,True,False
+8152144177729545927999296682104713773450687318641051882785083122565237294645,,[Executable] Reactivate SPP2 streams,executed,,https://discuss.ens.domains/t/executable-reactivate-spp2-streams,True,False
+48262157524430528705514027771464261215955420389394621161356313649894506972547,,[Executable] Adopt The SEAL Safe Harbor Agreement,executed,,https://discuss.ens.domains/t/temp-check-adopt-the-seal-safe-harbor-agreement/21226/1,True,False
+28621945985399756809323229823216459792275185227390789031203077499124321674250,,# [EP 6.20][Executable] Reimbursement for eth.limo’s Legal Fees,executed,,,True,False
+108835189906614532703236602621229289879643217303874617456878894788222576090451,,[Executable] Set Primary Names for Core DAO Addresses,executed,,https://discuss.ens.domains/t/temp-check-set-primary-names-for-core-dao-addresses/21432?u=limes,True,False
+89533866253315759669817396047764505253840458037760720608881002428435364696940,,[EP 6.22] [Executable] ENS Contract Naming Season,executed,,https://discuss.ens.domains/t/temp-check-ens-contract-naming-season/21402,True,False
+12950686153984121876325788121804936905339482144562527684056466889156345680789,,[EP 6.23] [Executable] Endowment permissions to karpatkey - Update #6,executed,,https://discuss.ens.domains/t/executable-endowment-permissions-to-karpatkey-update-6/21396,True,False
+77525093718307720477107269225240955392442633055266271196124066559357053541713,,[Executable] Collective Working Group Funding Request (Oct 2025),executed,,,False,False
+14510804444537789574755459676993085422296887570909724875059792580501615462793,,Assign Ownership of the .kred TLD to Verified Multisig Controller,executed,,https://discuss.ens.domains/t/draft-executable-assign-ownership-of-the-kred-tld-to-verified-multisig-controller/21720,False,False
+32193910699583510191805100765941306153785098144960716714178124679398515702376,,[EP 6.27] [Executable] Endowment permissions to karpatkey - Update #7,executed,,https://discuss.ens.domains/t/ep-6-28-executable-endowment-permissions-to-karpatkey-update-7/21641,True,False
+55749099144243971799440687308450608384225109120486751685653209891316805274409,,# [EP 6.28] ENS Retro: Executable Proposal,executed,,,False,False
+107313977323541760723614084561841045035159333942448750767795024713131429640046,,[EP 6.32] [Executable] Transfer $2.5M USDC from Endowment to wallet.ensdao.eth ,executed,,https://discuss.ens.domains/t/ep-6-32-executable-transfer-2-5m-usdc-from-endowment-to-wallet-ensdao-eth/21882,False,False
+7432320732701654700329828389963546575346476886035742386260284098817526767149,,Enable Root and Registrar Security Controllers,executed,,https://discuss.ens.domains/t/executable-enable-root-and-registrar-security-controllers/21872,False,False
+69304512515872868228453463730257567312488838925636819022683533220991373699419,,[EP 6.34] Register on.eth to the ENS DAO wallet and set the resolver,queued,,https://discuss.ens.domains/t/executable-register-on-eth-to-the-ens-dao-wallet-and-set-the-resolver/21894,False,False

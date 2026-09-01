@@ -1,0 +1,36 @@
+# Private: thesis, autoreferat, reviews, personal and administrative documents.
+# Nothing under this path ever enters git.
+thesis/
+
+# Data: kept on disk, never committed.
+data/db/
+data/processed/
+*.duckdb
+*.duckdb.wal
+*.duckdb.backup
+
+# NOTE: deliberately no blanket "*.csv" rule. Both predecessor repos had one,
+# and it would silently drop data/mappings/ and results/*_concentration.csv.
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.env
+.env.local
+
+# Node
+node_modules/
+
+# Editors / OS / agent scratch
+.DS_Store
+.vscode/
+.idea/
+*.swp
+.claude/
+.cursor/

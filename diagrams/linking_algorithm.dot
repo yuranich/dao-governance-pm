@@ -1,0 +1,60 @@
+digraph linking {
+    rankdir=TB;
+    fontname="Helvetica";
+    node [fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=9];
+    bgcolor="white";
+
+    // Input
+    input_snap [label="Snapshot-\nпредложения\n(off-chain)", shape=box, style=filled, fillcolor="#D6E4F0"];
+    input_onchain [label="On-chain\nпредложения", shape=box, style=filled, fillcolor="#FCE4D6"];
+
+    // Phase 1
+    phase1 [label="Фаза 1\nСопоставление через Tally API\nonchain_id → snapshot_id", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+    matched1 [label="Связанные\n(фаза 1)", shape=ellipse, style=filled, fillcolor="#E2EFDA", fontsize=9];
+    remain1 [label="Несвязанные", shape=ellipse, style=filled, fillcolor="#F8D7DA", fontsize=9];
+
+    // Phase 2
+    phase2 [label="Фаза 2\nПаттерны исполнения\n«Execute EP/AIP N»", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+    matched2 [label="Связанные\n(фаза 2)", shape=ellipse, style=filled, fillcolor="#E2EFDA", fontsize=9];
+    remain2 [label="Несвязанные", shape=ellipse, style=filled, fillcolor="#F8D7DA", fontsize=9];
+
+    // Phase 3
+    phase3 [label="Фаза 3\nТемпоральное + лексическое\nокно 90 дней, сходство ≥ 0,6", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+    matched3 [label="Связанные\n(фаза 3)", shape=ellipse, style=filled, fillcolor="#E2EFDA", fontsize=9];
+    remain3 [label="Несвязанные", shape=ellipse, style=filled, fillcolor="#F8D7DA", fontsize=9];
+
+    // Phase 4
+    phase4 [label="Фаза 4\nГруппировка пакетных\nпредложений (окно 7 дней)", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+    matched4 [label="Связанные\n(фаза 4)", shape=ellipse, style=filled, fillcolor="#E2EFDA", fontsize=9];
+    auto [label="Автономные\nкейсы", shape=ellipse, style=filled, fillcolor="#D6E4F0", fontsize=9];
+
+    // Output
+    output [label="Унифицированный\nжурнал событий\n(связанные кейсы)", shape=box, style="filled,bold", fillcolor="#D5A6E6"];
+
+    // Flow
+    input_snap -> phase1;
+    input_onchain -> phase1;
+
+    phase1 -> matched1;
+    phase1 -> remain1;
+
+    remain1 -> phase2;
+    phase2 -> matched2;
+    phase2 -> remain2;
+
+    remain2 -> phase3;
+    phase3 -> matched3;
+    phase3 -> remain3;
+
+    remain3 -> phase4;
+    phase4 -> matched4;
+    phase4 -> auto;
+
+    // All matched flow to output
+    matched1 -> output;
+    matched2 -> output;
+    matched3 -> output;
+    matched4 -> output;
+    auto -> output;
+}

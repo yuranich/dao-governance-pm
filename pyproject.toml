@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dao-governance-pm"
+version = "0.1.0"
+description = "Process mining analysis of DAO governance"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+# Explicit list is mandatory: without it, flat-layout auto-discovery sees
+# extraction/, analysis/, figures/ and fails with
+# "Multiple top-level packages discovered in a flat-layout".
+packages = ["daogov"]

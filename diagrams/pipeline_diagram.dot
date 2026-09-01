@@ -1,0 +1,68 @@
+digraph pipeline {
+    rankdir=LR;
+    fontname="Helvetica";
+    node [fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=9];
+    bgcolor="white";
+
+    subgraph cluster_dao_sources {
+        label="Источники событий DAO";
+        style=rounded;
+        color="#4472C4";
+        fontcolor="#4472C4";
+        fontsize=13;
+
+        snap [label="Snapshot\nGraphQL API", shape=box, style=filled, fillcolor="#D6E4F0"];
+        dune [label="Ethereum RPC /\nDune Analytics", shape=box, style=filled, fillcolor="#D6E4F0"];
+        tally [label="Tally API\n(отображение ID)", shape=box, style=filled, fillcolor="#D6E4F0"];
+    }
+
+    subgraph cluster_dao_pipeline {
+        label="Конвейер ENS DAO и AAVE DAO";
+        style=rounded;
+        color="#ED7D31";
+        fontcolor="#ED7D31";
+        fontsize=13;
+
+        duck_dao [label="DuckDB\n{dao}_events", shape=cylinder, style=filled, fillcolor="#FFF2CC"];
+        link [label="Четырёхфазное\nсвязывание\n(Рис. 2.2)", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+        migrate [label="Обработка\nмиграций\n(v1→v2→v3)", shape=box, style="filled,rounded", fillcolor="#FFF2CC"];
+        export_ens [label="Экспорт pm4py\nENS", shape=box, style="filled,rounded", fillcolor="#E2EFDA"];
+        export_aave [label="Экспорт pm4py\nAAVE", shape=box, style="filled,rounded", fillcolor="#E2EFDA"];
+        csv_ens [label="ens_linked\n_pm4py.csv\n134 402 событий", shape=note, style=filled, fillcolor="#E2EFDA"];
+        csv_aave [label="aave_linked\n_pm4py.csv\n3 198 485 событий", shape=note, style=filled, fillcolor="#E2EFDA"];
+    }
+
+    subgraph cluster_comparison {
+        label="Независимые сравнительные данные";
+        style=rounded;
+        color="#70AD47";
+        fontcolor="#70AD47";
+        fontsize=13;
+
+        ukparl [label="UK Parliament\nBills + Votes API", shape=box, style=filled, fillcolor="#E2EFDA"];
+        normalize_uk [label="Отдельное извлечение\nи нормализация", shape=box, style="filled,rounded", fillcolor="#E2EFDA"];
+        csv_uk [label="uk_parliament\n_pm4py.csv\n~118 000 событий", shape=note, style=filled, fillcolor="#E2EFDA"];
+        corp [label="Корпоративные\nданные [28]\n(агрегаты)", shape=box, style=filled, fillcolor="#FCE4D6"];
+    }
+
+    snap -> duck_dao;
+    dune -> duck_dao;
+    duck_dao -> link;
+    tally -> link [label="маппинг"];
+    link -> export_ens;
+    export_ens -> csv_ens;
+    link -> migrate;
+    migrate -> export_aave;
+    export_aave -> csv_aave;
+
+    ukparl -> normalize_uk;
+    normalize_uk -> csv_uk;
+
+    corp -> analysis [style=dashed, label="агрегированные\nданные"];
+
+    analysis [label="Раздельный анализ\nи последующее сравнение\n(Главы 3–4)", shape=box, style="filled,bold", fillcolor="#D5A6E6"];
+    csv_ens -> analysis;
+    csv_aave -> analysis;
+    csv_uk -> analysis;
+}
