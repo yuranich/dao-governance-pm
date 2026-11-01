@@ -100,3 +100,5 @@ small proposal-ID mappings needed for linking are tracked in `data/mappings/`.
 ## License
 
 MIT — see `LICENSE`.
+
+<!-- openclaw fork+PR workflow test, safe to close -->
